@@ -9,7 +9,7 @@ Ant task that runs an embedded jsfl script to publish flas
 		
     		<taskdef name="fla" classname="shmedia.utils.FlaAntTask" classpath="${ant.project.name}.jar"/>
 	   	
-    		<fla folder="${basedir}" />
+    		<fla folder="${basedir}/fla" />
 	
   	</target>
 	
