@@ -4,7 +4,7 @@
 	
 	<target name="use" description="Use the Task" depends="jar">
 		<taskdef name="fla" classname="shmedia.utils.FlaAntTask" classpath="${ant.project.name}.jar"/>
-	   	<fla folder="${basedir}" />
+	   	<fla folder="${basedir}/fla" />
 	</target>
 	
 	

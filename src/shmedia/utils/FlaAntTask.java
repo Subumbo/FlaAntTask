@@ -17,7 +17,7 @@ public class FlaAntTask extends Task{
 		
 		log(_folder);
 		
-		String jsfl = "var folderURI = 'file:///Macintosh%20HD" + _folder + "'; var folderContents = FLfile.listFolder(folderURI); for (var i=0; i<folderContents.length; i++) { var fileURL = folderURI + '/' + folderContents[i]; var theFile = fileURL.substr(fileURL.length-4, 4); if(theFile == '.fla'){ fl.openDocument(fileURL);}}while (fl.getDocumentDOM() != null) {fl.getDocumentDOM().publish();fl.saveDocument(fl.getDocumentDOM());fl.closeDocument(fl.getDocumentDOM());}";
+		String jsfl = "var folderURI = 'file:///Macintosh%20HD" + _folder + "'; var folderContents = FLfile.listFolder(folderURI); for (var i=0; i<folderContents.length; i++) { var fileURL = folderURI + '/' + folderContents[i]; var theFile = fileURL.substr(fileURL.length-4, 4); if(theFile == '.fla'){ fl.publishDocument(fileURL);}}";
 		log("------> BUILDING");
 		
 		
